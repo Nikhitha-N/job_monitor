@@ -1,6 +1,8 @@
 """
 job_monitor/main.py
 Run with:  python main.py
+           python main.py --once     (single run, no loop — useful for cron)
+           python main.py --check    (test Ollama + config, no scraping)
 """
 
 import time
@@ -8,13 +10,13 @@ import logging
 import sys
 from pathlib import Path
 
-# Make sure local imports work when called from any directory
 sys.path.insert(0, str(Path(__file__).parent))
 
 import config
 from core.loader import load_companies
 from core.scraper import scrape_all
 from core.tracker import filter_new
+from core.ollama_classifier import OllamaClassifier
 from notifiers.email_notifier import send_email
 from notifiers.sms_notifier import send_sms
 
@@ -29,11 +31,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def run_once():
+def build_classifier() -> OllamaClassifier:
+    model = getattr(config, "OLLAMA_MODEL", None) if config.USE_OLLAMA else None
+    return OllamaClassifier(model=model)
+
+
+def run_once(classifier: OllamaClassifier):
     logger.info("=" * 60)
     logger.info("Starting job scan…")
 
-    # 1. Load company list
     try:
         companies = load_companies(config.COMPANIES_FILE)
     except Exception as e:
@@ -44,17 +50,13 @@ def run_once():
         logger.warning("No companies loaded. Check your file.")
         return
 
-    # 2. Scrape
-    all_jobs = scrape_all(companies)
-
-    # 3. Filter to only new (unseen) jobs
+    all_jobs = scrape_all(companies, classifier)
     new_jobs = filter_new(all_jobs)
 
     if not new_jobs:
-        logger.info("Nothing new. Will check again later.")
+        logger.info("No new jobs since last run.")
         return
 
-    # 4. Notify
     logger.info(f"Sending notifications for {len(new_jobs)} new job(s)…")
 
     send_email(
@@ -76,25 +78,63 @@ def run_once():
     logger.info("Done.")
 
 
+def check_mode():
+    """Validate config and Ollama without scraping anything."""
+    logger.info("--- Config Check ---")
+    logger.info(f"Companies file : {config.COMPANIES_FILE}")
+    logger.info(f"Notify email   : {config.NOTIFY_EMAIL}")
+    logger.info(f"SMS enabled    : {config.NOTIFY_SMS}")
+    logger.info(f"Interval       : {config.CHECK_INTERVAL_MINUTES} min")
+    logger.info(f"Use Ollama     : {config.USE_OLLAMA}")
+    if config.USE_OLLAMA:
+        logger.info(f"Ollama model   : {getattr(config, 'OLLAMA_MODEL', 'auto-detect')}")
+
+    logger.info("--- Ollama Status ---")
+    clf = build_classifier()
+    if clf.available:
+        test_titles = [
+            "Senior Data Scientist",
+            "Machine Learning Engineer",
+            "Software Engineer II",
+            "Product Manager",
+            "NLP Research Scientist",
+        ]
+        logger.info("Running test classifications:")
+        for t in test_titles:
+            result = clf.is_relevant(t)
+            label = "[RELEVANT]" if result else "[SKIP]    "
+            logger.info(f"  {label}  {t}")
+    logger.info("--- Check complete ---")
+
+
 def main():
+    args = sys.argv[1:]
+
+    if "--check" in args:
+        check_mode()
+        return
+
+    # Build classifier once — reused across all runs
+    classifier = build_classifier()
+
+    if "--once" in args:
+        run_once(classifier)
+        return
+
     logger.info("Job Monitor started.")
-    logger.info(f"Checking every {config.CHECK_INTERVAL_MINUTES} minute(s).")
-    logger.info(f"Company file: {config.COMPANIES_FILE}")
-    logger.info(f"Notify: {config.NOTIFY_EMAIL}"
-                + (f" + SMS {config.PHONE_NUMBER}" if config.NOTIFY_SMS else ""))
+    logger.info(f"Interval: every {config.CHECK_INTERVAL_MINUTES} minute(s). Ctrl+C to stop.")
 
     while True:
         try:
-            run_once()
+            run_once(classifier)
         except KeyboardInterrupt:
             logger.info("Stopped by user.")
             break
         except Exception as e:
             logger.error(f"Unexpected error: {e}", exc_info=True)
 
-        wait_seconds = config.CHECK_INTERVAL_MINUTES * 60
         logger.info(f"Sleeping {config.CHECK_INTERVAL_MINUTES} min…")
-        time.sleep(wait_seconds)
+        time.sleep(config.CHECK_INTERVAL_MINUTES * 60)
 
 
 if __name__ == "__main__":

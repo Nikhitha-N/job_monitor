@@ -29,8 +29,20 @@ CARRIER         = "tmobile"       # ← att | tmobile | verizon | sprint |
 CHECK_INTERVAL_MINUTES = 30
 
 
-# ── AI filtering (optional) ───────────────────────────────────────────────────
-# If True, the monitor tries to use a local Ollama LLM (llama3) for smarter
-# job-title classification.  Falls back to keyword matching if Ollama isn't running.
-# Install Ollama: https://ollama.com  then run: ollama pull llama3
-USE_OLLAMA = False
+# ── Ollama AI Classifier ──────────────────────────────────────────────────────
+# Ollama MUST be installed and running: https://ollama.com
+#   Install:  https://ollama.com/download
+#   Start:    ollama serve
+#   Pull a model (pick ONE):
+#     ollama pull llama3          ← recommended, fast (~4 GB)
+#     ollama pull llama3.1        ← slightly newer
+#     ollama pull mistral         ← good alternative (~4 GB)
+#     ollama pull gemma2          ← Google's model (~5 GB)
+#     ollama pull phi3            ← lighter, faster (~2 GB)
+#
+# Set OLLAMA_MODEL to the model you pulled, or leave as None to auto-detect.
+# If the model isn't found, the monitor auto-picks the best available one.
+# If Ollama is unreachable, it silently falls back to keyword matching.
+
+USE_OLLAMA    = True
+OLLAMA_MODEL  = "llama3"   # ← change to whatever you pulled, or set None for auto
