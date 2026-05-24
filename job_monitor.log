@@ -60,3 +60,316 @@
 2026-05-23 20:19:39,634 [INFO] Email sent to nikhitha0613@gmail.com
 2026-05-23 20:19:39,635 [INFO] Done.
 2026-05-23 20:19:39,636 [INFO] Sleeping 30 min…
+2026-05-24 12:06:32,650 [INFO] --- Config Check ---
+2026-05-24 12:06:32,653 [INFO] Companies file : companies.csv
+2026-05-24 12:06:32,656 [INFO] Notify email   : nikhitha0613@gmail.com
+2026-05-24 12:06:32,657 [INFO] SMS enabled    : False
+2026-05-24 12:06:32,658 [INFO] Interval       : 30 min
+2026-05-24 12:06:32,661 [INFO] Use Ollama     : True
+2026-05-24 12:06:32,661 [INFO] Ollama model   : llama3
+2026-05-24 12:06:32,661 [INFO] --- Ollama Status ---
+2026-05-24 12:06:36,812 [INFO] [OK] Ollama ready -- using model: llama3  (available: llama3)
+2026-05-24 12:06:36,813 [INFO] Running test classifications:
+2026-05-24 12:06:53,875 [INFO]   [RELEVANT]  Senior Data Scientist
+2026-05-24 12:07:01,460 [INFO]   [RELEVANT]  Machine Learning Engineer
+2026-05-24 12:07:05,320 [INFO]   [SKIP]      Software Engineer II
+2026-05-24 12:07:08,880 [INFO]   [SKIP]      Product Manager
+2026-05-24 12:07:15,452 [INFO]   [RELEVANT]  NLP Research Scientist
+2026-05-24 12:07:15,452 [INFO] --- Check complete ---
+2026-05-24 12:09:04,257 [INFO] [OK] Ollama ready -- using model: llama3  (available: llama3)
+2026-05-24 12:09:04,258 [INFO] ============================================================
+2026-05-24 12:09:04,259 [INFO] Starting job scan…
+2026-05-24 12:09:04,300 [INFO] Loaded 11 companies from companies.csv
+2026-05-24 12:09:07,039 [WARNING] Failed to fetch https://url: HTTPSConnectionPool(host='url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='url', port=443): Failed to resolve 'url' ([Errno 11001] getaddrinfo failed)"))
+2026-05-24 12:09:07,040 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 12:09:07,040 [INFO] No static/API candidates found for name. Trying Playwright...
+2026-05-24 12:09:13,930 [INFO] Found 0 candidate(s) using Playwright
+2026-05-24 12:09:13,931 [INFO] No candidates found for name
+2026-05-24 12:09:16,889 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 12:09:16,889 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 12:09:47,048 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 12:09:47,149 [INFO]   1/18 titles classified as relevant.
+2026-05-24 12:09:48,402 [WARNING] Failed to fetch https://www.metacareers.com/jobs?q=machine+learning: 400 Client Error: Bad Request for url: https://www.metacareers.com/jobs?q=machine+learning
+2026-05-24 12:09:48,406 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 12:09:48,407 [INFO] No static/API candidates found for Meta. Trying Playwright...
+2026-05-24 12:09:55,133 [INFO] Found 14 candidate(s) using Playwright
+2026-05-24 12:09:55,133 [INFO] Classifying 14 job title(s) with Ollama (llama3)…
+2026-05-24 12:10:25,056 [INFO]   Batch 1: classified 14 titles — 6 relevant
+2026-05-24 12:10:25,157 [INFO]   6/14 titles classified as relevant.
+2026-05-24 12:10:26,687 [INFO] Found 8 candidate(s) using static scraper
+2026-05-24 12:10:26,688 [INFO] Classifying 8 job title(s) with Ollama (llama3)…
+2026-05-24 12:10:46,520 [INFO]   Batch 1: classified 8 titles — 0 relevant
+2026-05-24 12:10:46,621 [INFO]   0/8 titles classified as relevant.
+2026-05-24 12:10:46,727 [WARNING] Failed to fetch https://jobs.microsoft.com/en-us/search?q=data+science: HTTPSConnectionPool(host='jobs.microsoft.com', port=443): Max retries exceeded with url: /en-us/search?q=data+science (Caused by NameResolutionError("HTTPSConnection(host='jobs.microsoft.com', port=443): Failed to resolve 'jobs.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-24 12:10:46,731 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 12:10:46,732 [INFO] No static/API candidates found for Microsoft. Trying Playwright...
+2026-05-24 12:10:47,835 [INFO] Found 0 candidate(s) using Playwright
+2026-05-24 12:10:47,836 [INFO] No candidates found for Microsoft
+2026-05-24 12:10:49,173 [INFO] Found 6 candidate(s) using static scraper
+2026-05-24 12:10:49,174 [INFO] Classifying 6 job title(s) with Ollama (llama3)…
+2026-05-24 12:11:03,407 [INFO]   Batch 1: classified 6 titles — 0 relevant
+2026-05-24 12:11:03,509 [INFO]   0/6 titles classified as relevant.
+2026-05-24 12:11:04,575 [WARNING] Failed to fetch https://jobs.netflix.com/search?q=machine+learning: 404 Client Error: Not Found for url: https://jobs.netflix.com/search?q=machine+learning
+2026-05-24 12:11:04,578 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 12:11:04,578 [INFO] No static/API candidates found for Netflix. Trying Playwright...
+2026-05-24 12:11:09,688 [INFO] Found 21 candidate(s) using Playwright
+2026-05-24 12:11:09,688 [INFO] Classifying 21 job title(s) with Ollama (llama3)…
+2026-05-24 12:11:53,345 [INFO]   Batch 1: classified 20 titles — 1 relevant
+2026-05-24 12:11:58,137 [INFO]   Batch 2: classified 1 titles — 0 relevant
+2026-05-24 12:11:58,238 [INFO]   1/21 titles classified as relevant.
+2026-05-24 12:12:00,397 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 12:12:00,397 [INFO] No static/API candidates found for Nvidia. Trying Playwright...
+2026-05-24 12:12:06,270 [INFO] Found 22 candidate(s) using Playwright
+2026-05-24 12:12:06,270 [INFO] Classifying 22 job title(s) with Ollama (llama3)…
+2026-05-24 12:12:44,628 [INFO]   Batch 1: classified 20 titles — 10 relevant
+2026-05-24 12:12:51,431 [INFO]   Batch 2: classified 2 titles — 1 relevant
+2026-05-24 12:12:51,536 [INFO]   11/22 titles classified as relevant.
+2026-05-24 12:12:52,672 [INFO] Found 4 candidate(s) using static scraper
+2026-05-24 12:12:52,673 [INFO] Classifying 4 job title(s) with Ollama (llama3)…
+2026-05-24 12:13:03,195 [INFO]   Batch 1: classified 4 titles — 0 relevant
+2026-05-24 12:13:03,296 [INFO]   0/4 titles classified as relevant.
+2026-05-24 12:13:04,411 [INFO] Found 392 candidate(s) using greenhouse adapter
+2026-05-24 12:13:04,412 [INFO] Classifying 392 job title(s) with Ollama (llama3)…
+2026-05-24 12:13:44,718 [INFO]   Batch 1: classified 20 titles — 12 relevant
+2026-05-24 12:14:34,510 [INFO]   Batch 2: classified 20 titles — 18 relevant
+2026-05-24 12:15:23,948 [INFO]   Batch 3: classified 20 titles — 1 relevant
+2026-05-24 12:16:13,526 [INFO]   Batch 4: classified 20 titles — 2 relevant
+2026-05-24 12:16:50,921 [INFO]   Batch 5: classified 20 titles — 9 relevant
+2026-05-24 12:17:42,279 [INFO]   Batch 6: classified 20 titles — 1 relevant
+2026-05-24 12:18:33,822 [INFO]   Batch 7: classified 20 titles — 2 relevant
+2026-05-24 12:19:05,806 [INFO]   Batch 8: classified 20 titles — 6 relevant
+2026-05-24 12:19:31,513 [INFO]   Batch 9: classified 20 titles — 2 relevant
+2026-05-24 12:20:03,226 [INFO]   Batch 10: classified 20 titles — 6 relevant
+2026-05-24 12:20:42,178 [INFO]   Batch 11: classified 20 titles — 3 relevant
+2026-05-24 12:21:32,423 [INFO]   Batch 12: classified 20 titles — 4 relevant
+2026-05-24 12:22:26,028 [INFO]   Batch 13: classified 20 titles — 18 relevant
+2026-05-24 12:23:17,678 [INFO]   Batch 14: classified 20 titles — 12 relevant
+2026-05-24 12:24:08,078 [INFO]   Batch 15: classified 20 titles — 7 relevant
+2026-05-24 12:24:45,630 [INFO]   Batch 16: classified 20 titles — 2 relevant
+2026-05-24 12:25:13,158 [INFO]   Batch 17: classified 20 titles — 4 relevant
+2026-05-24 12:25:46,649 [WARNING] Batch classification failed (Expecting ',' delimiter: line 1 column 189 (char 188)), falling back to keywords for this batch
+2026-05-24 12:26:38,284 [INFO]   Batch 19: classified 20 titles — 0 relevant
+2026-05-24 12:27:08,948 [INFO]   Batch 20: classified 12 titles — 5 relevant
+2026-05-24 12:27:09,049 [INFO]   114/392 titles classified as relevant.
+2026-05-24 12:27:10,437 [INFO] Found 13 candidate(s) using static scraper
+2026-05-24 12:27:10,437 [INFO] Classifying 13 job title(s) with Ollama (llama3)…
+2026-05-24 12:27:40,589 [INFO]   Batch 1: classified 13 titles — 0 relevant
+2026-05-24 12:27:40,690 [INFO]   0/13 titles classified as relevant.
+2026-05-24 12:27:40,695 [INFO] 102 new job(s) to notify about.
+2026-05-24 12:27:40,695 [INFO] Sending notifications for 102 new job(s)…
+2026-05-24 12:27:43,778 [INFO] Email sent to nikhitha0613@gmail.com
+2026-05-24 12:27:43,778 [INFO] Done.
+2026-05-24 16:43:58,395 [INFO] [OK] Ollama ready -- using model: llama3  (available: llama3)
+2026-05-24 16:43:58,396 [INFO] ============================================================
+2026-05-24 16:43:58,396 [INFO] Starting job scan…
+2026-05-24 16:43:58,406 [ERROR] Could not load companies file: Could not determine delimiter
+2026-05-24 16:54:07,369 [INFO] [OK] Ollama ready -- using model: llama3  (available: llama3)
+2026-05-24 16:54:07,370 [INFO] ============================================================
+2026-05-24 16:54:07,370 [INFO] Starting job scan…
+2026-05-24 16:54:07,375 [INFO] Scraping Google -> https://www.google.com/about/careers/applications/jobs/results/?q=Machine%20Learning&hl=en&location=United%20States&target_level=EARLY&degree=BACHELORS&degree=MASTERS
+2026-05-24 16:54:08,240 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 16:54:08,240 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 16:54:47,242 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 16:54:47,344 [INFO]   1/18 titles classified as relevant.
+2026-05-24 16:54:47,344 [INFO] -> 1 relevant role(s) at Google
+2026-05-24 16:54:47,344 [INFO] Scraping Google -> https://www.google.com/about/careers/applications/jobs/results/?hl=en&q=%22Software%20Engineer%22&location=United%20States&degree=BACHELORS&degree=MASTERS&target_level=MID&target_level=EARLY
+2026-05-24 16:54:48,322 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 16:54:48,322 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 16:54:53,625 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 16:54:53,727 [INFO]   1/18 titles classified as relevant.
+2026-05-24 16:54:53,728 [INFO] -> 1 relevant role(s) at Google
+2026-05-24 16:54:53,728 [INFO] Scraping Google -> https://www.google.com/about/careers/applications/jobs/results/?q=Data%20Science&hl=en&location=United%20States&target_level=EARLY&degree=BACHELORS&degree=MASTERS
+2026-05-24 16:54:54,621 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 16:54:54,621 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 16:54:59,763 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 16:54:59,865 [INFO]   1/18 titles classified as relevant.
+2026-05-24 16:54:59,866 [INFO] -> 1 relevant role(s) at Google
+2026-05-24 16:54:59,866 [INFO] Scraping Meta -> https://www.metacareers.com/jobsearch?teams[0]=Artificial%20Intelligence&teams[1]=Data%20%26%20Analytics&teams[2]=Research&teams[3]=Software%20Engineering&teams[4]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[5]=Security&roles[0]=Full%20time%20employment&roles[1]=Internship
+2026-05-24 16:55:00,653 [WARNING] Failed to fetch https://www.metacareers.com/jobsearch?teams[0]=Artificial%20Intelligence&teams[1]=Data%20%26%20Analytics&teams[2]=Research&teams[3]=Software%20Engineering&teams[4]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[5]=Security&roles[0]=Full%20time%20employment&roles[1]=Internship: 400 Client Error: Bad Request for url: https://www.metacareers.com/jobsearch?teams%5B0%5D=Artificial%20Intelligence&teams%5B1%5D=Data%20%26%20Analytics&teams%5B2%5D=Research&teams%5B3%5D=Software%20Engineering&teams%5B4%5D=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams%5B5%5D=Security&roles%5B0%5D=Full%20time%20employment&roles%5B1%5D=Internship
+2026-05-24 16:55:00,656 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 16:55:00,657 [INFO] No static/API candidates found for Meta. Trying Playwright...
+2026-05-24 16:55:08,396 [INFO] Found 16 candidate(s) using Playwright
+2026-05-24 16:55:08,396 [INFO] Classifying 16 job title(s) with Ollama (llama3)…
+2026-05-24 16:55:56,055 [INFO]   Batch 1: classified 16 titles — 5 relevant
+2026-05-24 16:55:56,157 [INFO]   5/16 titles classified as relevant.
+2026-05-24 16:55:56,158 [INFO] -> 5 relevant role(s) at Meta
+2026-05-24 16:55:56,158 [INFO] Scraping Apple -> https://jobs.apple.com/en-us/search?location=united-states-USA&key=Machine%2520Learning+Deep%2520Learning+AI+Data%2520Science+Data%2520Analyst+NLP+Software%2520Engineer+LLM
+2026-05-24 16:55:57,405 [INFO] Found 8 candidate(s) using static scraper
+2026-05-24 16:55:57,406 [INFO] Classifying 8 job title(s) with Ollama (llama3)…
+2026-05-24 16:56:20,954 [INFO]   Batch 1: classified 8 titles — 0 relevant
+2026-05-24 16:56:21,056 [INFO]   0/8 titles classified as relevant.
+2026-05-24 16:56:21,057 [INFO] -> 0 relevant role(s) at Apple
+2026-05-24 16:56:21,057 [INFO] Scraping Microsoft -> https://apply.careers.microsoft.com/careers?start=0&location=United%20States&filter_include_remote=1&filter_career_discipline=Software%20Engineering%2CApplied%20Sciences%2CResearch%20Sciences%2CData%20Science%2CData%20Engineering&filter_seniority=Entry%2CMid-Level
+2026-05-24 16:56:22,623 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 16:56:22,623 [INFO] No static/API candidates found for Microsoft. Trying Playwright...
+2026-05-24 16:56:28,920 [INFO] Found 36 candidate(s) using Playwright
+2026-05-24 16:56:28,921 [INFO] Classifying 36 job title(s) with Ollama (llama3)…
+2026-05-24 16:57:10,887 [INFO]   Batch 1: classified 20 titles — 0 relevant
+2026-05-24 16:58:03,920 [INFO]   Batch 2: classified 16 titles — 5 relevant
+2026-05-24 16:58:04,022 [INFO]   5/36 titles classified as relevant.
+2026-05-24 16:58:04,023 [INFO] -> 5 relevant role(s) at Microsoft
+2026-05-24 16:58:04,023 [INFO] Scraping Amazon -> https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&category%5B%5D=software-development&category%5B%5D=machine-learning-science&category%5B%5D=design&category%5B%5D=operations-it-support-engineering&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&industry_experience=one_to_three_years&latitude=38.89036&longitude=-77.03196&loc_group_id=&loc_query=United%20states&base_query=&city=&country=USA&region=&county=&query_options=&
+2026-05-24 16:58:05,028 [INFO] Found 6 candidate(s) using static scraper
+2026-05-24 16:58:05,028 [INFO] Classifying 6 job title(s) with Ollama (llama3)…
+2026-05-24 16:58:23,748 [INFO]   Batch 1: classified 6 titles — 0 relevant
+2026-05-24 16:58:23,850 [INFO]   0/6 titles classified as relevant.
+2026-05-24 16:58:23,850 [INFO] -> 0 relevant role(s) at Amazon
+2026-05-24 16:58:23,851 [INFO] Scraping Netflix -> https://explore.jobs.netflix.net/careers?location=United%20states&pid=790316026759&domain=netflix.com&sort_by=relevance&triggerGoButton=false
+2026-05-24 16:58:24,975 [INFO] Found 4 candidate(s) using static scraper
+2026-05-24 16:58:24,976 [INFO] Classifying 4 job title(s) with Ollama (llama3)…
+2026-05-24 16:58:37,158 [INFO]   Batch 1: classified 4 titles — 0 relevant
+2026-05-24 16:58:37,260 [INFO]   0/4 titles classified as relevant.
+2026-05-24 16:58:37,260 [INFO] -> 0 relevant role(s) at Netflix
+2026-05-24 16:58:37,261 [INFO] Scraping Nvidia -> https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/jobs?q=AI,%20Data%20Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84
+2026-05-24 16:58:38,693 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 16:58:38,694 [INFO] No static/API candidates found for Nvidia. Trying Playwright...
+2026-05-24 16:58:43,731 [INFO] Found 22 candidate(s) using Playwright
+2026-05-24 16:58:43,732 [INFO] Classifying 22 job title(s) with Ollama (llama3)…
+2026-05-24 16:59:38,474 [INFO]   Batch 1: classified 20 titles — 10 relevant
+2026-05-24 16:59:45,850 [INFO]   Batch 2: classified 2 titles — 1 relevant
+2026-05-24 16:59:45,952 [INFO]   11/22 titles classified as relevant.
+2026-05-24 16:59:45,953 [INFO] -> 11 relevant role(s) at Nvidia
+2026-05-24 16:59:45,953 [INFO] Scraping OpenAI -> https://jobs.ashbyhq.com/openai?employmentType=FullTime&locationId=bbd9f7fe-aae5-476a-9108-f25aea8f6cd2
+2026-05-24 16:59:46,983 [INFO] Found 699 candidate(s) using ashby adapter
+2026-05-24 16:59:46,983 [INFO] Classifying 699 job title(s) with Ollama (llama3)…
+2026-05-24 17:00:45,223 [INFO]   Batch 1: classified 20 titles — 10 relevant
+2026-05-24 17:01:44,645 [INFO]   Batch 2: classified 20 titles — 7 relevant
+2026-05-24 17:02:43,843 [INFO]   Batch 3: classified 20 titles — 9 relevant
+2026-05-24 17:03:20,550 [INFO]   Batch 4: classified 20 titles — 6 relevant
+2026-05-24 17:04:07,141 [INFO]   Batch 5: classified 20 titles — 12 relevant
+2026-05-24 17:05:05,257 [INFO]   Batch 6: classified 20 titles — 4 relevant
+2026-05-24 17:06:04,417 [INFO]   Batch 7: classified 20 titles — 6 relevant
+2026-05-24 17:07:04,618 [INFO]   Batch 8: classified 20 titles — 7 relevant
+2026-05-24 17:08:06,777 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:09:05,834 [INFO]   Batch 10: classified 20 titles — 5 relevant
+2026-05-24 17:09:37,766 [INFO]   Batch 11: classified 20 titles — 3 relevant
+2026-05-24 17:10:37,814 [INFO]   Batch 12: classified 20 titles — 3 relevant
+2026-05-24 17:11:35,951 [INFO]   Batch 13: classified 20 titles — 6 relevant
+2026-05-24 17:12:35,828 [INFO]   Batch 14: classified 20 titles — 7 relevant
+2026-05-24 17:13:06,575 [INFO]   Batch 15: classified 20 titles — 2 relevant
+2026-05-24 17:14:06,627 [INFO]   Batch 16: classified 20 titles — 2 relevant
+2026-05-24 17:14:41,684 [INFO]   Batch 17: classified 20 titles — 5 relevant
+2026-05-24 17:15:43,859 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:16:14,184 [INFO]   Batch 19: classified 20 titles — 2 relevant
+2026-05-24 17:17:15,169 [INFO]   Batch 20: classified 20 titles — 9 relevant
+2026-05-24 17:18:16,492 [INFO]   Batch 21: classified 20 titles — 7 relevant
+2026-05-24 17:18:49,120 [INFO]   Batch 22: classified 20 titles — 4 relevant
+2026-05-24 17:19:20,276 [INFO]   Batch 23: classified 20 titles — 3 relevant
+2026-05-24 17:19:58,003 [INFO]   Batch 24: classified 20 titles — 6 relevant
+2026-05-24 17:20:57,210 [INFO]   Batch 25: classified 20 titles — 11 relevant
+2026-05-24 17:21:31,506 [INFO]   Batch 26: classified 20 titles — 4 relevant
+2026-05-24 17:22:31,920 [INFO]   Batch 27: classified 20 titles — 6 relevant
+2026-05-24 17:23:10,971 [INFO]   Batch 28: classified 20 titles — 3 relevant
+2026-05-24 17:24:10,000 [INFO]   Batch 29: classified 20 titles — 5 relevant
+2026-05-24 17:25:10,372 [INFO]   Batch 30: classified 20 titles — 5 relevant
+2026-05-24 17:26:12,527 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:27:11,820 [INFO]   Batch 32: classified 20 titles — 7 relevant
+2026-05-24 17:27:44,639 [INFO]   Batch 33: classified 20 titles — 3 relevant
+2026-05-24 17:28:45,406 [INFO]   Batch 34: classified 20 titles — 5 relevant
+2026-05-24 17:29:41,493 [INFO]   Batch 35: classified 19 titles — 5 relevant
+2026-05-24 17:29:41,594 [INFO]   184/699 titles classified as relevant.
+2026-05-24 17:29:41,595 [INFO] -> 184 relevant role(s) at OpenAI
+2026-05-24 17:29:41,595 [INFO] Scraping OpenAI -> https://jobs.ashbyhq.com/openai?employmentType=FullTime&locationId=6252b4ed-714d-469a-a970-7a13101bac9d
+2026-05-24 17:29:42,607 [INFO] Found 699 candidate(s) using ashby adapter
+2026-05-24 17:29:42,607 [INFO] Classifying 699 job title(s) with Ollama (llama3)…
+2026-05-24 17:37:22,721 [INFO] [OK] Ollama ready -- using model: llama3  (available: llama3)
+2026-05-24 17:37:22,722 [INFO] ============================================================
+2026-05-24 17:37:22,722 [INFO] Starting job scan…
+2026-05-24 17:37:22,724 [INFO] Scraping Google -> https://www.google.com/about/careers/applications/jobs/results/?q=Machine%20Learning&hl=en&location=United%20States&target_level=EARLY&degree=BACHELORS&degree=MASTERS
+2026-05-24 17:37:23,541 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 17:37:23,541 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 17:37:58,244 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 17:37:58,346 [INFO]   1/18 titles classified as relevant.
+2026-05-24 17:37:58,347 [INFO] -> 1 relevant role(s) at Google
+2026-05-24 17:37:58,347 [INFO] Scraping Google -> https://www.google.com/about/careers/applications/jobs/results/?hl=en&q=%22Software%20Engineer%22&location=United%20States&degree=BACHELORS&degree=MASTERS&target_level=MID&target_level=EARLY
+2026-05-24 17:37:59,466 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 17:37:59,467 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 17:38:04,601 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 17:38:04,703 [INFO]   1/18 titles classified as relevant.
+2026-05-24 17:38:04,704 [INFO] -> 1 relevant role(s) at Google
+2026-05-24 17:38:04,704 [INFO] Scraping Google -> https://www.google.com/about/careers/applications/jobs/results/?q=Data%20Science&hl=en&location=United%20States&target_level=EARLY&degree=BACHELORS&degree=MASTERS
+2026-05-24 17:38:05,840 [INFO] Found 18 candidate(s) using static scraper
+2026-05-24 17:38:05,841 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-24 17:38:10,881 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-24 17:38:10,983 [INFO]   1/18 titles classified as relevant.
+2026-05-24 17:38:10,983 [INFO] -> 1 relevant role(s) at Google
+2026-05-24 17:38:10,984 [INFO] Scraping Meta -> https://www.metacareers.com/jobsearch?teams[0]=Artificial%20Intelligence&teams[1]=Data%20%26%20Analytics&teams[2]=Research&teams[3]=Software%20Engineering&teams[4]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[5]=Security&roles[0]=Full%20time%20employment&roles[1]=Internship
+2026-05-24 17:38:11,668 [WARNING] Failed to fetch https://www.metacareers.com/jobsearch?teams[0]=Artificial%20Intelligence&teams[1]=Data%20%26%20Analytics&teams[2]=Research&teams[3]=Software%20Engineering&teams[4]=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams[5]=Security&roles[0]=Full%20time%20employment&roles[1]=Internship: 400 Client Error: Bad Request for url: https://www.metacareers.com/jobsearch?teams%5B0%5D=Artificial%20Intelligence&teams%5B1%5D=Data%20%26%20Analytics&teams%5B2%5D=Research&teams%5B3%5D=Software%20Engineering&teams%5B4%5D=University%20Grad%20-%20Engineering%2C%20Tech%20%26%20Design&teams%5B5%5D=Security&roles%5B0%5D=Full%20time%20employment&roles%5B1%5D=Internship
+2026-05-24 17:38:11,670 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 17:38:11,671 [INFO] No static/API candidates found for Meta. Trying Playwright...
+2026-05-24 17:38:17,987 [INFO] Found 16 candidate(s) using Playwright
+2026-05-24 17:38:17,988 [INFO] Classifying 16 job title(s) with Ollama (llama3)…
+2026-05-24 17:39:04,951 [INFO]   Batch 1: classified 16 titles — 5 relevant
+2026-05-24 17:39:05,053 [INFO]   5/16 titles classified as relevant.
+2026-05-24 17:39:05,053 [INFO] -> 5 relevant role(s) at Meta
+2026-05-24 17:39:05,054 [INFO] Scraping Apple -> https://jobs.apple.com/en-us/search?location=united-states-USA&key=Machine%2520Learning+Deep%2520Learning+AI+Data%2520Science+Data%2520Analyst+NLP+Software%2520Engineer+LLM
+2026-05-24 17:39:06,244 [INFO] Found 8 candidate(s) using static scraper
+2026-05-24 17:39:06,245 [INFO] Classifying 8 job title(s) with Ollama (llama3)…
+2026-05-24 17:39:29,654 [INFO]   Batch 1: classified 8 titles — 0 relevant
+2026-05-24 17:39:29,755 [INFO]   0/8 titles classified as relevant.
+2026-05-24 17:39:29,756 [INFO] -> 0 relevant role(s) at Apple
+2026-05-24 17:39:29,756 [INFO] Scraping Microsoft -> https://apply.careers.microsoft.com/careers?start=0&location=United%20States&filter_include_remote=1&filter_career_discipline=Software%20Engineering%2CApplied%20Sciences%2CResearch%20Sciences%2CData%20Science%2CData%20Engineering&filter_seniority=Entry%2CMid-Level
+2026-05-24 17:39:31,137 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 17:39:31,137 [INFO] No static/API candidates found for Microsoft. Trying Playwright...
+2026-05-24 17:39:37,561 [INFO] Found 21 candidate(s) using Playwright
+2026-05-24 17:39:37,562 [INFO] Classifying 21 job title(s) with Ollama (llama3)…
+2026-05-24 17:40:39,626 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:40:43,913 [INFO]   Batch 2: classified 1 titles — 0 relevant
+2026-05-24 17:40:44,015 [INFO]   0/21 titles classified as relevant.
+2026-05-24 17:40:44,015 [INFO] -> 0 relevant role(s) at Microsoft
+2026-05-24 17:40:44,016 [INFO] Scraping Amazon -> https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&category%5B%5D=software-development&category%5B%5D=machine-learning-science&category%5B%5D=design&category%5B%5D=operations-it-support-engineering&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&industry_experience=one_to_three_years&latitude=38.89036&longitude=-77.03196&loc_group_id=&loc_query=United%20states&base_query=&city=&country=USA&region=&county=&query_options=&
+2026-05-24 17:40:44,995 [INFO] Found 6 candidate(s) using static scraper
+2026-05-24 17:40:44,995 [INFO] Classifying 6 job title(s) with Ollama (llama3)…
+2026-05-24 17:41:01,584 [INFO]   Batch 1: classified 6 titles — 0 relevant
+2026-05-24 17:41:01,686 [INFO]   0/6 titles classified as relevant.
+2026-05-24 17:41:01,687 [INFO] -> 0 relevant role(s) at Amazon
+2026-05-24 17:41:01,687 [INFO] Scraping Netflix -> https://explore.jobs.netflix.net/careers?location=United%20states&pid=790316026759&domain=netflix.com&sort_by=relevance&triggerGoButton=false
+2026-05-24 17:41:02,755 [INFO] Found 4 candidate(s) using static scraper
+2026-05-24 17:41:02,755 [INFO] Classifying 4 job title(s) with Ollama (llama3)…
+2026-05-24 17:41:14,772 [INFO]   Batch 1: classified 4 titles — 0 relevant
+2026-05-24 17:41:14,873 [INFO]   0/4 titles classified as relevant.
+2026-05-24 17:41:14,874 [INFO] -> 0 relevant role(s) at Netflix
+2026-05-24 17:41:14,874 [INFO] Scraping Nvidia -> https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/jobs?q=AI,%20Data%20Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84
+2026-05-24 17:41:16,358 [INFO] Found 0 candidate(s) using static scraper
+2026-05-24 17:41:16,359 [INFO] No static/API candidates found for Nvidia. Trying Playwright...
+2026-05-24 17:41:21,427 [INFO] Found 22 candidate(s) using Playwright
+2026-05-24 17:41:21,427 [INFO] Classifying 22 job title(s) with Ollama (llama3)…
+2026-05-24 17:42:15,163 [INFO]   Batch 1: classified 20 titles — 10 relevant
+2026-05-24 17:42:22,413 [INFO]   Batch 2: classified 2 titles — 1 relevant
+2026-05-24 17:42:22,515 [INFO]   11/22 titles classified as relevant.
+2026-05-24 17:42:22,515 [INFO] -> 11 relevant role(s) at Nvidia
+2026-05-24 17:42:22,516 [INFO] Scraping Anthropic -> https://job-boards.greenhouse.io/anthropic?departments%5B%5D=4002061008&departments%5B%5D=4079949008&departments%5B%5D=4010154008&departments%5B%5D=4050633008&departments%5B%5D=4002065008&departments%5B%5D=4019632008&departments%5B%5D=4002063008&offices%5B%5D=4039647008&offices%5B%5D=4011066008&offices%5B%5D=4001219008&offices%5B%5D=4011067008&offices%5B%5D=4008537008&offices%5B%5D=4001218008&offices%5B%5D=4011228008&offices%5B%5D=4001217008
+2026-05-24 17:42:23,124 [INFO] Found 392 candidate(s) using greenhouse adapter
+2026-05-24 17:42:23,124 [INFO] Classifying 392 job title(s) with Ollama (llama3)…
+2026-05-24 17:43:11,313 [INFO]   Batch 1: classified 20 titles — 12 relevant
+2026-05-24 17:44:09,595 [INFO]   Batch 2: classified 20 titles — 18 relevant
+2026-05-24 17:45:07,081 [INFO]   Batch 3: classified 20 titles — 1 relevant
+2026-05-24 17:46:05,483 [INFO]   Batch 4: classified 20 titles — 2 relevant
+2026-05-24 17:46:50,296 [INFO]   Batch 5: classified 20 titles — 9 relevant
+2026-05-24 17:47:52,431 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:48:54,587 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:49:33,568 [INFO]   Batch 8: classified 20 titles — 6 relevant
+2026-05-24 17:55:23,831 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-24 17:56:17,652 [INFO]   Batch 10: classified 20 titles — 6 relevant
+2026-05-24 17:57:02,718 [INFO]   Batch 11: classified 20 titles — 3 relevant
+2026-05-24 17:58:00,611 [INFO]   Batch 12: classified 20 titles — 4 relevant
+2026-05-24 17:59:01,483 [INFO]   Batch 13: classified 20 titles — 18 relevant
+2026-05-24 18:00:02,914 [INFO]   Batch 14: classified 20 titles — 12 relevant
+2026-05-24 18:01:02,316 [INFO]   Batch 15: classified 20 titles — 7 relevant
+2026-05-24 18:01:45,640 [INFO]   Batch 16: classified 20 titles — 2 relevant
+2026-05-24 18:02:17,772 [INFO]   Batch 17: classified 20 titles — 4 relevant
+2026-05-24 18:02:56,816 [WARNING] Batch classification failed (Expecting ',' delimiter: line 1 column 189 (char 188)), falling back to keywords for this batch
+2026-05-24 18:03:56,223 [INFO]   Batch 19: classified 20 titles — 0 relevant
+2026-05-24 18:04:31,713 [INFO]   Batch 20: classified 12 titles — 5 relevant
+2026-05-24 18:04:31,814 [INFO]   112/392 titles classified as relevant.
+2026-05-24 18:04:31,815 [INFO] -> 112 relevant role(s) at Anthropic
+2026-05-24 18:04:31,815 [INFO] Scraping Databricks -> https://www.databricks.com/company/careers/open-positions?department=Research,Engineering,IT,University%20Recruiting,Security&location=United%20States
+2026-05-24 18:04:32,709 [INFO] Found 13 candidate(s) using static scraper
+2026-05-24 18:04:32,709 [INFO] Classifying 13 job title(s) with Ollama (llama3)…
+2026-05-24 18:05:08,489 [INFO]   Batch 1: classified 13 titles — 0 relevant
+2026-05-24 18:05:08,591 [INFO]   0/13 titles classified as relevant.
+2026-05-24 18:05:08,592 [INFO] -> 0 relevant role(s) at Databricks
+2026-05-24 18:05:08,596 [INFO] 131 new job(s) to notify about.
+2026-05-24 18:05:08,596 [INFO] Sending notifications for 131 new job(s)…
+2026-05-24 18:05:10,011 [INFO] Email sent to nikhitha0613@gmail.com
+2026-05-24 18:05:10,011 [INFO] Done.

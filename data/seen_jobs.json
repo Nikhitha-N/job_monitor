@@ -1,192 +1,657 @@
 {
-  "https://careers.google.com/jobs/results/ai?q=data+scientist": {
+  "https://www.google.com/about/careers/applications/jobs/results/ai?q=Machine+Learning&hl=en&location=United+States&target_level=EARLY&degree=BACHELORS&degree=MASTERS": {
     "title": "AI at Google",
-    "company": "careers.google.com",
-    "first_seen": "2026-05-23T17:23:12.435278"
+    "company": "Google",
+    "first_seen": "2026-05-24T18:05:08.593619"
+  },
+  "https://www.google.com/about/careers/applications/jobs/results/ai?hl=en&q=%22Software+Engineer%22&location=United+States&degree=BACHELORS&degree=MASTERS&target_level=MID&target_level=EARLY": {
+    "title": "AI at Google",
+    "company": "Google",
+    "first_seen": "2026-05-24T18:05:08.593655"
+  },
+  "https://www.google.com/about/careers/applications/jobs/results/ai?q=Data+Science&hl=en&location=United+States&target_level=EARLY&degree=BACHELORS&degree=MASTERS": {
+    "title": "AI at Google",
+    "company": "Google",
+    "first_seen": "2026-05-24T18:05:08.593664"
+  },
+  "https://www.metacareers.com/profile/job_details/998357492128826": {
+    "title": "Software Engineer, Machine Learning Sunnyvale, CA +8 locations \u22c5 Software Engineering \u22c5 Machine Learning Multiple Locations Software Engineering Machine Learning",
+    "company": "Meta",
+    "first_seen": "2026-05-24T18:05:08.593670"
+  },
+  "https://www.metacareers.com/profile/job_details/1187958502273564": {
+    "title": "Software Engineer (Technical Leadership) Sunnyvale, CA +6 locations \u22c5 AI Infrastructure +1 more \u22c5 Engineering Multiple Locations AI Infrastructure Software Engineering Engineering",
+    "company": "Meta",
+    "first_seen": "2026-05-24T18:05:08.593674"
+  },
+  "https://www.metacareers.com/profile/job_details/1070147800777577": {
+    "title": "Data Scientist, Product Analytics Sunnyvale, CA +9 locations \u22c5 Data & Analytics \u22c5 Data Science Multiple Locations Data & Analytics Data Science",
+    "company": "Meta",
+    "first_seen": "2026-05-24T18:05:08.593678"
+  },
+  "https://www.metacareers.com/profile/job_details/27198454773112568": {
+    "title": "QA Engineer, Software Quality Assurance Redmond, WA \u22c5 Artificial Intelligence \u22c5 Artificial Intelligence Redmond, WA Artificial Intelligence",
+    "company": "Meta",
+    "first_seen": "2026-05-24T18:05:08.593683"
+  },
+  "https://www.metacareers.com/profile/job_details/3489873754638185": {
+    "title": "Data Science Director Menlo Park, CA \u22c5 Data & Analytics \u22c5 Data Science Menlo Park, CA Data & Analytics Data Science",
+    "company": "Meta",
+    "first_seen": "2026-05-24T18:05:08.593687"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-HPC-Performance-Engineer---AI-for-Science-at-Scale_JR2013492?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Senior HPC Performance Engineer - AI for Science at Scale",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593692"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Data-and-AI-Solutions-Engineer_JR2017697-1?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Senior Data and AI Solutions Engineer",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593696"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Applied-Research-PhD-Student--Foundation-Models-for-Materials-Science_JR2016738?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Applied Research PhD Student, Foundation Models for Materials Science",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593700"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Vietnam-Hanoi/Senior-System-Software-Engineer--AI-Data-Platform_JR2012894?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Senior System Software Engineer, AI Data Platform",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593704"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer---Physical-AI-and-Synthetic-Data-Generation_JR2017502?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Senior Machine Learning Engineer - Physical AI and Synthetic Data Generation",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593707"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Vietnam-Hanoi/Senior-System-Software-Engineer---AI-Data-Platform---Inference-Factory-Optimization_JR2009873?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Senior System Software Engineer - AI Data Platform - Inference Factory Optimization",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593711"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Hong-Kong-STP/Machine-Learning-Intern---AI-Agents-Conversational-AI_JR2017298?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Machine Learning Intern - AI Agents Conversational AI",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593713"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Manager--Developer-Technology_JR2011456-1?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Manager, GPU Accelerated Data Analytics",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593717"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/France-Courbevoie/Data-Processing-Developer-Technology-Intern---2026_JR2006379?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Data Processing Developer Technology Intern - 2026",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593720"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Hong-Kong-STP/Machine-Learning-Intern---Multimodal-Models-Generative-AI_JR2017296-1?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Machine Learning Intern - Multimodal Models Generative AI",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593723"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Architect---Data-Center-Systems_JR1973150?q=AI,+Data+Science&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffda1e8d447e94&jobFamilyGroup=0c40f6bd1d8f10ae43ffc8817cf47e8e&jobFamilyGroup=0c40f6bd1d8f10ae43ffbd1459047e84": {
+    "title": "Senior Software Architect - Data Center Systems",
+    "company": "Nvidia",
+    "first_seen": "2026-05-24T18:05:08.593726"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4461450008": {
+    "title": "Account Executive, AI Native ",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593731"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5208218008": {
+    "title": "AI Compliance Officer",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593734"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4956672008": {
+    "title": "Analytics Data Engineer",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593738"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5125387008": {
+    "title": "Analytics Data Engineering Manager, Product",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593745"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5023394008": {
+    "title": "Anthropic Fellows Program",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593749"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5183044008": {
+    "title": "Anthropic Fellows Program, AI Safety",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593751"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5030244008": {
+    "title": "Anthropic Fellows Program, AI Security",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593755"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5183051008": {
+    "title": "Anthropic Fellows Program, ML Systems & Performance",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593757"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5183052008": {
-    "title": "Anthropic Fellows Program, Reinforcement LearningLondon, UK; Ontario, CAN; Remote-Friendly, United States; San Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435299"
+    "title": "Anthropic Fellows Program, Reinforcement Learning",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593761"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5183053008": {
+    "title": "Anthropic Fellows Program - The Anthropic Institute Fellows (Economics & Policy)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593764"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5076109008": {
+    "title": "Applied AI Architect",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593767"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5226862008": {
+    "title": "Applied AI Architect, Applied AI (Digital Natives Business)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593770"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5192805008": {
+    "title": "Applied AI Architect, Commercial",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593774"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5065835008": {
+    "title": "Applied AI Architect, Enterprise Tech",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593777"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5079540008": {
+    "title": "Applied AI Architect, Federal Civilian",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593780"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5140405008": {
+    "title": "Applied AI Architect, Government Technology",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593783"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4977624008": {
+    "title": "Applied AI Architect, Industries",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593785"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4461444008": {
+    "title": "Applied AI Architect, Industries",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593788"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4977626008": {
+    "title": "Applied AI Architect, Industries",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593791"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5031670008": {
+    "title": "Applied AI Architect, Industries",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593794"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5079511008": {
+    "title": "Applied AI Architect, National Security",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593797"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4968059008": {
+    "title": "Applied AI Architect, Startups",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593800"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5057258008": {
+    "title": "Applied AI Architect, Startups",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593803"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5140403008": {
+    "title": "Applied AI Architect, State and Local Government",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593806"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5055488008": {
+    "title": "Applied AI Engineer",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593813"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5116274008": {
+    "title": "Applied AI Engineer ",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593816"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5146028008": {
+    "title": "Applied AI Engineer, Beneficial Deployments",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593819"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5068226008": {
+    "title": "Applied AI Engineer, Beneficial Deployments",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593821"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5057647008": {
+    "title": "Applied AI Engineer, Enterprise Tech",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593824"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5111942008": {
+    "title": "Applied AI Engineer, Life Sciences (Beneficial Deployments)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593827"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5066977008": {
+    "title": "Biological Safety Research Scientist",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593831"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5156057008": {
+    "title": "Data Engineer, Safeguards",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593835"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5197529008": {
+    "title": "Data Scientist, Developer Productivity",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593838"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5097186008": {
+    "title": "Design Engineer, AI Capability Development (Education Labs)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593840"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5079916008": {
+    "title": "Emerging Account Executive, AI Native",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593844"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5159608008": {
+    "title": "Engineering Manager, Agent Prompts & Evals",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593847"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5081338008": {
+    "title": "Engineering Manager, API Core Capabilities",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593849"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5141377008": {
+    "title": "Engineering Manager, Cloud Inference AWS",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593852"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5068296008": {
+    "title": "Engineering Manager, Detection and Response",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593854"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4741104008": {
+    "title": "Engineering Manager, GPU (ML Accelerator)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593856"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4741102008": {
+    "title": "Engineering Manager, Inference",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593859"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5155391008": {
+    "title": "Engineering Manager, Inference Routing and Performance",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593862"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4532887008": {
-    "title": "[Expression of Interest] Research Scientist / Engineer, HonestyNew York City, NY; San Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435303"
+    "title": "[Expression of Interest] Research Scientist / Engineer, Honesty",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593866"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4985877008": {
+    "title": "Forward Deployed Engineer, Applied AI",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593869"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5186067008": {
-    "title": "Full-Stack Software Engineer, Reinforcement LearningSan Francisco, CA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435326"
+    "title": "Full-Stack Software Engineer, Reinforcement Learning",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593872"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5192104008": {
+    "title": "Global Applied AI Architecture Lead, Beneficial Deployments",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593874"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5183021008": {
+    "title": "Head of Accounting AI & Innovation",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593881"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5184077008": {
+    "title": "Head of ANZ, Applied AI",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593883"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5146999008": {
+    "title": "Head of International Applied AI Architecture, Partnerships",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593886"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4952079008": {
-    "title": "Machine Learning Systems Engineer, Research ToolsSan Francisco, CA | New York City, NY | Seattle, WA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435332"
+    "title": "Machine Learning Systems Engineer, Research Tools",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593890"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4952051008": {
-    "title": "Machine Learning Systems Engineer, RL EngineeringSan Francisco, CA | New York City, NY | Seattle, WA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435334"
+    "title": "Machine Learning Systems Engineer, RL Engineering",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593893"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5025624008": {
-    "title": "Research Engineer, Cybersecurity Reinforcement LearningSan Francisco, CA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435337"
+  "https://job-boards.greenhouse.io/anthropic/jobs/4976328008": {
+    "title": "Manager\u2013 Growth Sales (AI-Native)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593896"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5115935008": {
-    "title": "Research Engineer, Machine Learning (Reinforcement Learning)London, UK",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435339"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5197538008": {
+    "title": "Manager of Applied AI Architecture, Enterprise Tech (Cyber)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593899"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4613568008": {
-    "title": "Research Engineer, Machine Learning (Reinforcement Learning)San Francisco, CA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435341"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5173031008": {
+    "title": "Manager of Applied AI Architecture, Partnerships",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593902"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5198108008": {
-    "title": "Research Engineer, Machine Learning (RL Velocity)Remote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435343"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5222289008": {
+    "title": "Manager of Solutions Architecture, Applied AI (Enterprise Tech)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593904"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5198074008": {
-    "title": "Research Engineer, Machine Learning (RL Velocity)London, UK",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435344"
+  "https://job-boards.greenhouse.io/anthropic/jobs/4778843008": {
+    "title": "ML Infrastructure Engineer, Safeguards",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593907"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4613592008": {
-    "title": "Research Engineer, Production Model Post-TrainingSan Francisco, CA | New York City, NY | Seattle, WA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435347"
+  "https://job-boards.greenhouse.io/anthropic/jobs/4949336008": {
+    "title": "ML/Research Engineer, Safeguards",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593910"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5112018008": {
-    "title": "Research Engineer, Production Model Post-TrainingZ\u00fcrich, CH",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435349"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5191437008": {
+    "title": "Partner Business Systems & AI Operations Lead",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593913"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5074815008": {
-    "title": "Research Engineer/Research Scientist, AudioSan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435351"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5135168008": {
-    "title": "Research Engineer / Research Scientist, Pre-trainingZ\u00fcrich, CH",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435352"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4616971008": {
-    "title": "Research Engineer/Research Scientist, Pre-trainingRemote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435354"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4951814008": {
-    "title": "Research Engineer / Research Scientist, TokensNew York City, NY; New York City, NY | Seattle, WA; San Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435356"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5024831008": {
-    "title": "Research Engineer, Reward Models PlatformRemote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435357"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5197337008": {
-    "title": "Research Engineer, RL Infrastructure (Knowledge Work)San Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435359"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5191785008": {
-    "title": "Research Engineer, Safeguards LabsSan Francisco, CA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:23:12.435361"
-  },
-  "https://www.databricks.com/research#careers": {
-    "title": "Research",
-    "company": "databricks.com",
-    "first_seen": "2026-05-23T17:23:12.435363"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5224564008": {
-    "title": "Performance Engineer, Inference SystemsNewSan Francisco, CA | New York City, NY | Seattle, WA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397784"
+  "https://job-boards.greenhouse.io/anthropic/jobs/4950664008": {
+    "title": "Partner Solutions Architect, Applied AI",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593935"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4949108008": {
-    "title": "Privacy Research Engineer, SafeguardsSan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397804"
+    "title": "Privacy Research Engineer, Safeguards",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593939"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5194302008": {
+    "title": "Program Operations Manager, Human Data",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593942"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5107121008": {
+    "title": "Prompt Engineer, Agent Prompts & Evals",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593945"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5125083008": {
-    "title": "Research Engineer, AI ObservabilitySan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397807"
+    "title": "Research Engineer, AI Observability",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593949"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4669581008": {
-    "title": "Research Engineer, DiscoverySan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397810"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/5071132008": {
-    "title": "Research Engineer, Economic Research Data PlatformSan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397812"
-  },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4951064008": {
-    "title": "Research Engineer, Environment ScalingRemote-Friendly (Travel Required) | San Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397816"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5025624008": {
+    "title": "Research Engineer, Cybersecurity Reinforcement Learning",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593951"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5067100008": {
-    "title": "Research Engineer,  Frontier Red Team (Autonomy)San Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397818"
+    "title": "Research Engineer,  Frontier Red Team (Autonomy)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593954"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4980430008": {
-    "title": "Research Engineer, InterpretabilitySan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397820"
+    "title": "Research Engineer, Interpretability",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593957"
   },
-  "https://job-boards.greenhouse.io/anthropic/jobs/4017331008": {
-    "title": "Research Engineer, Knowledge TeamRemote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397823"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5115935008": {
+    "title": "Research Engineer, Machine Learning (Reinforcement Learning)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593960"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4613568008": {
+    "title": "Research Engineer, Machine Learning (Reinforcement Learning) ",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593967"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5198074008": {
+    "title": "Research Engineer, Machine Learning (RL Velocity)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593971"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5198108008": {
+    "title": "Research Engineer, Machine Learning (RL Velocity)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593973"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5198255008": {
-    "title": "Research Engineer, Model EvaluationsRemote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397827"
+    "title": "Research Engineer, Model Evaluations",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593976"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5160330008": {
-    "title": "Research Engineer, Performance RLSan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397829"
+    "title": "Research Engineer, Performance RL",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593978"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/5119713008": {
-    "title": "Research Engineer, PretrainingLondon, UK",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397831"
+    "title": "Research Engineer, Pretraining",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593981"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4938432008": {
-    "title": "Research Engineer, Pretraining ScalingSan Francisco, CA",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397833"
+    "title": "Research Engineer, Pretraining Scaling",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593984"
   },
   "https://job-boards.greenhouse.io/anthropic/jobs/4938436008": {
-    "title": "Research Engineer, Pretraining Scaling - LondonLondon, UK",
-    "company": "boards.greenhouse.io",
-    "first_seen": "2026-05-23T17:57:57.397835"
+    "title": "Research Engineer, Pretraining Scaling - London",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593988"
   },
-  "https://www.metacareers.com/profile/job_details/1048049836887307": {
-    "title": "Software Engineer, Machine Learning London, UK \u22c5 Software Engineering \u22c5 Engineering London, UK Software Engineering Engineering",
-    "company": "Meta",
-    "first_seen": "2026-05-23T20:19:38.072676"
+  "https://job-boards.greenhouse.io/anthropic/jobs/4613592008": {
+    "title": "Research Engineer, Production Model Post-Training",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593991"
   },
-  "https://www.metacareers.com/profile/job_details/1780259309366631": {
-    "title": "Software Engineering, Machine Learning Singapore \u22c5 Software Engineering +1 more \u22c5 Engineering Singapore Software Engineering Facebook Engineering",
-    "company": "Meta",
-    "first_seen": "2026-05-23T20:19:38.072686"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5112018008": {
+    "title": "Research Engineer, Production Model Post-Training",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593994"
   },
-  "https://jobs.netflix.com/careers/data-and-insights": {
-    "title": "Data & Insights",
-    "company": "Netflix",
-    "first_seen": "2026-05-23T20:19:38.072690"
+  "https://job-boards.greenhouse.io/anthropic/jobs/5074815008": {
+    "title": "Research Engineer/Research Scientist, Audio",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593996"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5135168008": {
+    "title": "Research Engineer / Research Scientist, Pre-training",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.593999"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4616971008": {
+    "title": "Research Engineer/Research Scientist, Pre-training",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594001"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5024831008": {
+    "title": "Research Engineer, Reward Models Platform",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594003"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5197337008": {
+    "title": "Research Engineer, RL Infrastructure (Knowledge Work)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594005"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5191785008": {
+    "title": "Research Engineer, Safeguards Labs",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594008"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5126127008": {
+    "title": "Research Engineer, Science of Scaling",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594010"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4631822008": {
+    "title": "Research Engineer / Scientist, Alignment Science",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594012"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4610158008": {
+    "title": "Research Engineer / Scientist, Alignment Science - London",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594014"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5076477008": {
+    "title": "Research Engineer / Scientist, Frontier Red Team (Cyber)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594017"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5076606008": {
+    "title": "Research Engineer / Scientist, Societal Impacts",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594019"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5061517008": {
+    "title": "Research Engineer, Universes",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594021"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4946308008": {
+    "title": "Research Engineer, Virtual Collaborator (Cowork)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594023"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5139654008": {
+    "title": "Research Lead, Training Insights",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594033"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5103788008": {
+    "title": "Research Scientist, Frontier Red Team (Emerging Risks)",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594036"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4980427008": {
+    "title": "Research Scientist, Interpretability",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594039"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5076616008": {
+    "title": "Research Scientist, Societal Impacts",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594041"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4982193008": {
+    "title": "Security Engineer, Detection & Response",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594044"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5135098008": {
+    "title": "Security Engineer Lead, Corporate Security",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594047"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5105509008": {
+    "title": "Security Engineer, Offensive Security",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594049"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5195705008": {
+    "title": "Security Engineer - Threat Intel",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594052"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5153564008": {
+    "title": "Security Labs Engineer",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594055"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4595463008": {
+    "title": "Security Software Engineer, Detection & Response Platform",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594057"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5209776008": {
+    "title": "Security Software Engineer, Platform Integration",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594059"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5024835008": {
+    "title": "Senior Research Scientist, Reward Models",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594063"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5191226008": {
+    "title": "Software Engineer, Research Data Platform",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594066"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5204086008": {
+    "title": "Solutions Architect, Applied AI",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594070"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5117581008": {
+    "title": "Solutions Architect, Applied AI ",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594072"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5101173008": {
+    "title": "Staff Software Engineer, AI Reliability Engineering",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594075"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5101169008": {
+    "title": "Staff Software Engineer, AI Reliability Engineering",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594078"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5203545008": {
+    "title": "Technical Program Manager, Research",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594082"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5074937008": {
+    "title": "Threat Collections Engineer",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594085"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/4720576008": {
+    "title": "TPU Kernel Engineer",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594088"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5149802008": {
+    "title": "Transformative AI Research Economist, Economic Research\u00a0",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594092"
+  },
+  "https://job-boards.greenhouse.io/anthropic/jobs/5202462008": {
+    "title": "Workforce Planning Lead, People Analytics",
+    "company": "Anthropic",
+    "first_seen": "2026-05-24T18:05:08.594095"
   }
 }

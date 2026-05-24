@@ -1,12 +1,14 @@
+from datetime import datetime
+from urllib.parse import urljoin, urlparse
+import re
+
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-from urllib.parse import urljoin, urlparse
-from datetime import datetime
-import re
 
 
 JOB_PATH_PATTERN = re.compile(
-    r"(job|career|position|opening|vacancy|role|requisition|req|apply)", re.I
+    r"(job|career|position|opening|vacancy|role|requisition|req|apply)",
+    re.I,
 )
 
 
@@ -21,7 +23,7 @@ def scrape_with_playwright(company: dict) -> list[dict]:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_timeout(3000)
+            page.wait_for_timeout(4000)
             html = page.content()
             browser.close()
 
@@ -35,7 +37,7 @@ def scrape_with_playwright(company: dict) -> list[dict]:
         title = a.get_text(" ", strip=True)
         href = a["href"]
 
-        if not title or len(title) < 4 or len(title) > 150:
+        if not title or len(title) < 4 or len(title) > 180:
             continue
 
         full_url = urljoin(url, href)
@@ -44,16 +46,20 @@ def scrape_with_playwright(company: dict) -> list[dict]:
             continue
 
         path = urlparse(full_url).path
+
         if not JOB_PATH_PATTERN.search(path) and not JOB_PATH_PATTERN.search(href):
             continue
 
         seen.add(full_url)
 
-        candidates.append({
-            "title": title,
-            "url": full_url,
-            "company": name,
-            "found_at": datetime.now().isoformat()
-        })
+        candidates.append(
+            {
+                "title": title,
+                "url": full_url,
+                "company": name,
+                "found_at": datetime.now().isoformat(),
+                "source": "playwright",
+            }
+        )
 
     return candidates

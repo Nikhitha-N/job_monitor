@@ -1,16 +1,25 @@
 """
 core/scraper.py
-─────────────────
-Fetches career pages and extracts candidate job links.
-Classification is now handled by OllamaClassifier (ollama_classifier.py).
+
+Routes each company career URL through:
+1. Platform/API adapter: Greenhouse, Lever, Ashby, Workday
+2. Static requests + BeautifulSoup scraper
+3. Playwright fallback for JavaScript-heavy pages
+4. OllamaClassifier filtering
 """
+
+import logging
+import re
+from datetime import datetime
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-import re
-import logging
-from urllib.parse import urljoin, urlparse
-from datetime import datetime
+
+from core.adapters.greenhouse import scrape_greenhouse
+from core.adapters.lever import scrape_lever
+from core.adapters.ashby import scrape_ashby
+from core.adapters.workday import scrape_workday
 from core.adapters.playwright_fallback import scrape_with_playwright
 
 logger = logging.getLogger(__name__)
@@ -24,37 +33,35 @@ HEADERS = {
 }
 
 JOB_PATH_PATTERN = re.compile(
-    r"(job|career|position|opening|vacancy|role|requisition|req|apply)", re.I
+    r"(job|career|position|opening|vacancy|role|requisition|req|apply)",
+    re.I,
 )
 
 
-def fetch_page(url: str, timeout: int = 15) -> str | None:
+def fetch_page(url: str, timeout: int = 20) -> str | None:
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=timeout)
-        resp.raise_for_status()
-        return resp.text
+        response = requests.get(url, headers=HEADERS, timeout=timeout)
+        response.raise_for_status()
+        return response.text
     except Exception as e:
         logger.warning(f"Failed to fetch {url}: {e}")
         return None
 
 
-def extract_candidate_links(html: str, base_url: str) -> list[dict]:
-    """
-    Extract ALL links that look like job postings — before any classification.
-    Returns raw candidates for the classifier to filter.
-    """
+def extract_candidate_links(html: str, base_url: str, company_name: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
     candidates = []
     seen = set()
 
     for a in soup.find_all("a", href=True):
-        title = a.get_text(strip=True)
+        title = a.get_text(" ", strip=True)
         href = a["href"]
 
-        if not title or len(title) < 4 or len(title) > 150:
+        if not title or len(title) < 4 or len(title) > 180:
             continue
 
         full_url = urljoin(base_url, href)
+
         if full_url in seen:
             continue
 
@@ -63,49 +70,90 @@ def extract_candidate_links(html: str, base_url: str) -> list[dict]:
             continue
 
         seen.add(full_url)
-        candidates.append({
-            "title": title,
-            "url": full_url,
-            "company": urlparse(base_url).netloc.replace("www.", ""),
-            "found_at": datetime.now().isoformat(),
-        })
+
+        candidates.append(
+            {
+                "title": title,
+                "url": full_url,
+                "company": company_name,
+                "found_at": datetime.now().isoformat(),
+                "source": "static",
+            }
+        )
 
     return candidates
 
 
-def scrape_company(company: dict, classifier) -> list[dict]:
-    """
-    Scrape one company's career page.
-    Static scraper runs first.
-    If no candidates are found, Playwright fallback runs.
-    Classifier filters candidates after extraction.
-    """
+def detect_platform(url: str) -> str:
+    lowered = url.lower()
+
+    if "greenhouse.io" in lowered:
+        return "greenhouse"
+
+    if "lever.co" in lowered:
+        return "lever"
+
+    if "ashbyhq.com" in lowered:
+        return "ashby"
+
+    if "myworkdayjobs.com" in lowered or "workdayjobs.com" in lowered:
+        return "workday"
+
+    return "generic"
+
+
+def scrape_static(company: dict) -> list[dict]:
     name = company.get("name", "Unknown")
     url = company.get("url", "")
 
-    logger.info(f"Scraping {name} → {url}")
-
-    candidates = []
-
-    # 1. Try normal static scraping first
     html = fetch_page(url)
-    if html:
-        candidates = extract_candidate_links(html, url)
-        logger.info(f"Found {len(candidates)} static candidate link(s) at {name}")
 
-    # 2. If static scraping finds nothing, try Playwright
-    if not candidates:
-        logger.info(f"No static candidates found for {name}. Trying Playwright...")
-        candidates = scrape_with_playwright(company)
-        logger.info(f"Found {len(candidates)} Playwright candidate link(s) at {name}")
-
-    # 3. If still nothing, return empty
-    if not candidates:
+    if not html:
         return []
 
-    # 4. Let Ollama/classifier decide relevance
+    return extract_candidate_links(html, url, name)
+
+
+def scrape_company(company: dict, classifier) -> list[dict]:
+    name = company.get("name", "Unknown")
+    url = company.get("url", "")
+
+    logger.info(f"Scraping {name} -> {url}")
+
+    candidates = []
+    platform = detect_platform(url)
+
+    # 1. Platform-specific API adapters
+    if platform == "greenhouse":
+        candidates = scrape_greenhouse(company)
+    elif platform == "lever":
+        candidates = scrape_lever(company)
+    elif platform == "ashby":
+        candidates = scrape_ashby(company)
+    elif platform == "workday":
+        candidates = scrape_workday(company)
+
+    if candidates:
+        logger.info(f"Found {len(candidates)} candidate(s) using {platform} adapter")
+
+    # 2. Static scraper fallback
+    if not candidates:
+        candidates = scrape_static(company)
+        logger.info(f"Found {len(candidates)} candidate(s) using static scraper")
+
+    # 3. Playwright fallback
+    if not candidates:
+        logger.info(f"No static/API candidates found for {name}. Trying Playwright...")
+        candidates = scrape_with_playwright(company)
+        logger.info(f"Found {len(candidates)} candidate(s) using Playwright")
+
+    if not candidates:
+        logger.info(f"No candidates found for {name}")
+        return []
+
+    # 4. Ollama / keyword classifier
     relevant = classifier.filter_jobs(candidates)
-    logger.info(f"→ {len(relevant)} relevant role(s) at {name}")
+    logger.info(f"-> {len(relevant)} relevant role(s) at {name}")
 
     return relevant
 
@@ -114,33 +162,12 @@ def scrape_all(companies: list[dict], classifier) -> list[dict]:
     all_jobs = []
 
     for company in companies:
-        all_jobs.extend(scrape_company(company, classifier))
+        try:
+            all_jobs.extend(scrape_company(company, classifier))
+        except Exception as e:
+            logger.error(f"Failed scraping {company.get('name', 'Unknown')}: {e}", exc_info=True)
 
     return all_jobs
-
-def scrape_static(company: dict, classifier) -> list[dict]:
-    """
-    Scrape one company's career page.
-    `classifier` must have a .filter_jobs(list[dict]) -> list[dict] method.
-    """
-    name = company.get("name", "Unknown")
-    url = company.get("url", "")
-
-    logger.info(f"Scraping {name} → {url}")
-    html = fetch_page(url)
-    if not html:
-        logger.warning(f"  Could not fetch page for {name}")
-        return []
-
-    candidates = extract_candidate_links(html, url)
-    logger.info(f"  Found {len(candidates)} candidate link(s) at {name}")
-
-    if not candidates:
-        return []
-
-    relevant = classifier.filter_jobs(candidates)
-    logger.info(f"  → {len(relevant)} relevant DS/ML/AI role(s) at {name}")
-    return relevant
 
 
 
