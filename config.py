@@ -25,7 +25,7 @@ CARRIER         = "tmobile"       # ← att | tmobile | verizon | sprint |
 
 
 # ── Schedule ──────────────────────────────────────────────────────────────────
-# How often to check (in minutes). 60 = once per hour.
+# How often to check (in minutes). 30 = once per hour.
 CHECK_INTERVAL_MINUTES = 30
 
 

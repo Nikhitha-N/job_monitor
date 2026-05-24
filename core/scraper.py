@@ -11,6 +11,7 @@ import re
 import logging
 from urllib.parse import urljoin, urlparse
 from datetime import datetime
+from core.adapters.playwright_fallback import scrape_with_playwright
 
 logger = logging.getLogger(__name__)
 
@@ -75,6 +76,51 @@ def extract_candidate_links(html: str, base_url: str) -> list[dict]:
 def scrape_company(company: dict, classifier) -> list[dict]:
     """
     Scrape one company's career page.
+    Static scraper runs first.
+    If no candidates are found, Playwright fallback runs.
+    Classifier filters candidates after extraction.
+    """
+    name = company.get("name", "Unknown")
+    url = company.get("url", "")
+
+    logger.info(f"Scraping {name} → {url}")
+
+    candidates = []
+
+    # 1. Try normal static scraping first
+    html = fetch_page(url)
+    if html:
+        candidates = extract_candidate_links(html, url)
+        logger.info(f"Found {len(candidates)} static candidate link(s) at {name}")
+
+    # 2. If static scraping finds nothing, try Playwright
+    if not candidates:
+        logger.info(f"No static candidates found for {name}. Trying Playwright...")
+        candidates = scrape_with_playwright(company)
+        logger.info(f"Found {len(candidates)} Playwright candidate link(s) at {name}")
+
+    # 3. If still nothing, return empty
+    if not candidates:
+        return []
+
+    # 4. Let Ollama/classifier decide relevance
+    relevant = classifier.filter_jobs(candidates)
+    logger.info(f"→ {len(relevant)} relevant role(s) at {name}")
+
+    return relevant
+
+
+def scrape_all(companies: list[dict], classifier) -> list[dict]:
+    all_jobs = []
+
+    for company in companies:
+        all_jobs.extend(scrape_company(company, classifier))
+
+    return all_jobs
+
+def scrape_static(company: dict, classifier) -> list[dict]:
+    """
+    Scrape one company's career page.
     `classifier` must have a .filter_jobs(list[dict]) -> list[dict] method.
     """
     name = company.get("name", "Unknown")
@@ -97,8 +143,4 @@ def scrape_company(company: dict, classifier) -> list[dict]:
     return relevant
 
 
-def scrape_all(companies: list[dict], classifier) -> list[dict]:
-    all_jobs = []
-    for company in companies:
-        all_jobs.extend(scrape_company(company, classifier))
-    return all_jobs
+

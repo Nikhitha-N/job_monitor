@@ -1,0 +1,62 @@
+2026-05-23 20:12:46,582 [INFO] [OK] Ollama ready -- using model: llama3  (available: llama3)
+2026-05-23 20:12:46,584 [INFO] Job Monitor started.
+2026-05-23 20:12:46,586 [INFO] Interval: every 30 minute(s). Ctrl+C to stop.
+2026-05-23 20:12:46,586 [INFO] ============================================================
+2026-05-23 20:12:46,587 [INFO] Starting job scan…
+2026-05-23 20:12:46,593 [INFO] Loaded 11 companies from companies.csv
+2026-05-23 20:12:49,382 [WARNING] Failed to fetch https://url: HTTPSConnectionPool(host='url', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='url', port=443): Failed to resolve 'url' ([Errno 11001] getaddrinfo failed)"))
+2026-05-23 20:12:49,386 [INFO] No static candidates found for name. Trying Playwright...
+2026-05-23 20:13:13,040 [INFO] Found 0 Playwright candidate link(s) at name
+2026-05-23 20:13:15,514 [INFO] Found 18 static candidate link(s) at Google
+2026-05-23 20:13:15,515 [INFO] Classifying 18 job title(s) with Ollama (llama3)…
+2026-05-23 20:14:11,589 [INFO]   Batch 1: classified 18 titles — 1 relevant
+2026-05-23 20:14:11,692 [INFO]   1/18 titles classified as relevant.
+2026-05-23 20:14:12,349 [WARNING] Failed to fetch https://www.metacareers.com/jobs?q=machine+learning: 400 Client Error: Bad Request for url: https://www.metacareers.com/jobs?q=machine+learning
+2026-05-23 20:14:12,350 [INFO] No static candidates found for Meta. Trying Playwright...
+2026-05-23 20:14:18,736 [INFO] Found 10 Playwright candidate link(s) at Meta
+2026-05-23 20:14:18,736 [INFO] Classifying 10 job title(s) with Ollama (llama3)…
+2026-05-23 20:14:33,934 [INFO]   Batch 1: classified 10 titles — 2 relevant
+2026-05-23 20:14:34,035 [INFO]   2/10 titles classified as relevant.
+2026-05-23 20:14:35,468 [INFO] Found 8 static candidate link(s) at Apple
+2026-05-23 20:14:35,470 [INFO] Classifying 8 job title(s) with Ollama (llama3)…
+2026-05-23 20:14:55,621 [INFO]   Batch 1: classified 8 titles — 0 relevant
+2026-05-23 20:14:55,722 [INFO]   0/8 titles classified as relevant.
+2026-05-23 20:14:55,784 [WARNING] Failed to fetch https://jobs.microsoft.com/en-us/search?q=data+science: HTTPSConnectionPool(host='jobs.microsoft.com', port=443): Max retries exceeded with url: /en-us/search?q=data+science (Caused by NameResolutionError("HTTPSConnection(host='jobs.microsoft.com', port=443): Failed to resolve 'jobs.microsoft.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-23 20:14:55,785 [INFO] No static candidates found for Microsoft. Trying Playwright...
+2026-05-23 20:14:56,747 [INFO] Found 0 Playwright candidate link(s) at Microsoft
+2026-05-23 20:14:58,480 [INFO] Found 6 static candidate link(s) at Amazon
+2026-05-23 20:14:58,480 [INFO] Classifying 6 job title(s) with Ollama (llama3)…
+2026-05-23 20:15:13,592 [INFO]   Batch 1: classified 6 titles — 0 relevant
+2026-05-23 20:15:13,699 [INFO]   0/6 titles classified as relevant.
+2026-05-23 20:15:14,589 [WARNING] Failed to fetch https://jobs.netflix.com/search?q=machine+learning: 404 Client Error: Not Found for url: https://jobs.netflix.com/search?q=machine+learning
+2026-05-23 20:15:14,591 [INFO] No static candidates found for Netflix. Trying Playwright...
+2026-05-23 20:15:19,132 [INFO] Found 21 Playwright candidate link(s) at Netflix
+2026-05-23 20:15:19,133 [INFO] Classifying 21 job title(s) with Ollama (llama3)…
+2026-05-23 20:16:10,092 [INFO]   Batch 1: classified 20 titles — 1 relevant
+2026-05-23 20:16:15,238 [INFO]   Batch 2: classified 1 titles — 0 relevant
+2026-05-23 20:16:15,341 [INFO]   1/21 titles classified as relevant.
+2026-05-23 20:16:16,635 [INFO] Found 0 static candidate link(s) at Nvidia
+2026-05-23 20:16:16,636 [INFO] No static candidates found for Nvidia. Trying Playwright...
+2026-05-23 20:16:21,021 [INFO] Found 2 Playwright candidate link(s) at Nvidia
+2026-05-23 20:16:21,022 [INFO] Classifying 2 job title(s) with Ollama (llama3)…
+2026-05-23 20:16:27,099 [INFO]   Batch 1: classified 2 titles — 0 relevant
+2026-05-23 20:16:27,206 [INFO]   0/2 titles classified as relevant.
+2026-05-23 20:16:28,311 [INFO] Found 4 static candidate link(s) at OpenAI
+2026-05-23 20:16:28,311 [INFO] Classifying 4 job title(s) with Ollama (llama3)…
+2026-05-23 20:16:40,727 [INFO]   Batch 1: classified 4 titles — 0 relevant
+2026-05-23 20:16:40,833 [INFO]   0/4 titles classified as relevant.
+2026-05-23 20:16:42,533 [INFO] Found 49 static candidate link(s) at Anthropic
+2026-05-23 20:16:42,534 [INFO] Classifying 49 job title(s) with Ollama (llama3)…
+2026-05-23 20:17:44,593 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-23 20:18:46,787 [WARNING] Batch classification failed (HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=60)), falling back to keywords for this batch
+2026-05-23 20:19:19,093 [INFO]   Batch 3: classified 9 titles — 9 relevant
+2026-05-23 20:19:19,194 [INFO]   19/49 titles classified as relevant.
+2026-05-23 20:19:20,032 [INFO] Found 13 static candidate link(s) at Databricks
+2026-05-23 20:19:20,032 [INFO] Classifying 13 job title(s) with Ollama (llama3)…
+2026-05-23 20:19:37,968 [INFO]   Batch 1: classified 13 titles — 1 relevant
+2026-05-23 20:19:38,069 [INFO]   1/13 titles classified as relevant.
+2026-05-23 20:19:38,073 [INFO] 3 new job(s) to notify about.
+2026-05-23 20:19:38,073 [INFO] Sending notifications for 3 new job(s)…
+2026-05-23 20:19:39,634 [INFO] Email sent to nikhitha0613@gmail.com
+2026-05-23 20:19:39,635 [INFO] Done.
+2026-05-23 20:19:39,636 [INFO] Sleeping 30 min…
